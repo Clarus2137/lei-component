@@ -1,0 +1,90 @@
+@import './../../node_modules/tailwindcss/base.css';
+@import './../../node_modules/tailwindcss/components.css';
+@import './../../node_modules/tailwindcss/utilities.css';
+
+@font-face {
+   font-family: 'Axiforma-SemiBold';
+   src: url('./../assets/fonts/Axiforma-SemiBold.woff2') format('woff2');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Axiforma-Light';
+   src: url('./../assets/fonts/Axiforma-Light.woff2') format('woff2');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('./../assets/fonts/Inter-Light.woff2') format('woff2');
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('./../assets/fonts/Inter-Regular.woff2') format('woff2');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('./../assets/fonts/Inter-Medium.woff2') format('woff2');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('./../assets/fonts/Inter-SemiBold.woff2') format('woff2');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('./../assets/fonts/Inter-Bold.woff2') format('woff2');
+   font-weight: 700;
+}
+
+:root {
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+   margin: 0;
+   min-width: 320px;
+   min-height: 100vh;
+}
+
+.wp-block-columns {
+   @apply container mb-0 px-4 xl:px-0;
+}
+
+.main-container p {
+   @apply text-base md:text-lg text-dark font-light mb-6;
+}
+
+.footer-menu ul li {
+   @apply text-white mb-4;
+}
+
+.footer-col-2 p {
+   @apply mb-4;
+}
+
+.entity-status {
+   @apply text-sm border rounded-full px-2 py-2 lowercase;
+}
+
+.entity-status.active {
+   @apply bg-green-100 border-green-500 text-green-500;
+}
+
+.entity-status.inactive {
+   @apply bg-red-100 border-red-500 text-red-500;
+}

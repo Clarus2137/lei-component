@@ -1,0 +1,115 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+   content: ["./template-parts/*.{php,js}","./template-parts/**/*.{php,js}","./*.{php,js}", "./**/*.{php,js}", "./src/*.{vue,js}", "./src/**/*.{vue,js}"],
+   theme: {
+      fontFamily: {
+         'axiforma': ['Axiforma-SemiBold'],
+         'axiforma-light': ['Axiforma-Light'],
+         'inter': ['Inter']
+      },
+      container: {
+         center: true,
+         screens: {
+            xl: "1200px",
+            '2xl': '1200px',
+         }
+      },
+      extend: {
+         boxShadow: {
+            'small': '0px 0px 30px 0px rgb(0 0 0/0.05)',
+            'medium': '0px 0px 30px 0px rgb(0 0 0/0.1)',
+            'large': '0px 0px 50px 0px rgb(0 0 0/0.4)'
+         },
+         fontSize: {
+            'menu': '0.9375rem',
+         },
+         colors: {
+            'primary': {
+               '100': '#fae7e9',
+               '200': '#f5cfd3',
+               '300': '#f0b8bd',
+               '400': '#eba0a7',
+               '500': '#e78891',
+               '600': '#e2707b',
+               '700': '#dd5865',
+               '800': '#d8414f',
+               '900': '#d32939',
+               DEFAULT: '#ce1123',
+            },
+            'secondary': {
+               '100': '#fffaec',
+               '200': '#fef6da',
+               '300': '#fef1c7',
+               '400': '#fdecb5',
+               '500': '#fce7a3',
+               '600': '#fce390',
+               '700': '#fbde7e',
+               '800': '#fbd96b',
+               '900': '#fad559 ',
+               DEFAULT: '#fad046',
+            },
+            'dark': {
+               '100': '#ececec',
+               '200': '#d9d9d9',
+               '300': '#c5c5c5',
+               '400': '#b2b2b2',
+               '500': '#9f9f9f',
+               '600': '#8c8c8c',
+               '700': '#797979',
+               '800': '#666666',
+               '900': '#525252',
+               DEFAULT: '#3f3f3f',
+            },
+            'darkgray': {
+               '100': '#f3f3f3',
+               '200': '#e6e6e6',
+               '300': '#dadada',
+               '400': '#cdcdcd',
+               '500': '#c1c1c1',
+               '600': '#b4b4b4',
+               '700': '#a8a8a8',
+               '800': '#9b9b9b',
+               '900': '#8f8f8f',
+               DEFAULT: '#828282',
+            },
+            'graphite': {
+               '100': '#f2f3f5',
+               '200': '#e5e7ea',
+               '300': '#d8dbe0',
+               '400': '#cbcfd5',
+               '500': '#bec3cb',
+               '600': '#b1b7c1',
+               '700': '#a4abb6',
+               '800': '#979fac',
+               '900': '#8a93a1',
+               DEFAULT: '#7d8797',
+            },
+            'lightgray': {
+               '100': '#fcfcfc',
+               '200': '#fafafa',
+               '300': '#f7f7f7',
+               '400': '#f4f4f4',
+               '500': '#f1f1f1',
+               '600': '#efefef',
+               '700': '#ececec',
+               '800': '#e9e9e9',
+               '900': '#e7e7e7',
+               DEFAULT: '#e4e4e4',
+            },
+            'light': {
+               '100': '#ffffff',
+               '200': '#fefefe',
+               '300': '#fefefe',
+               '400': '#fdfdfd',
+               '500': '#fcfcfc',
+               '600': '#fcfcfc',
+               '700': '#fbfbfb',
+               '800': '#fbfbfb',
+               '900': '#fafafa',
+               DEFAULT: '#fafafa',
+            }
+         },
+      },
+   },
+   plugins: [],
+}
